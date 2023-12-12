@@ -21,6 +21,8 @@ public class Ex5 {
 		} while(num != 0);
 		
 		System.out.println("A soma dos números positivos é: " + soma);
+		
+		s.close();
 	}
 
 }
