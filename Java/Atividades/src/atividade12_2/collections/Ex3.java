@@ -14,7 +14,12 @@ public class Ex3 {
 		
 		for(int i = 0; i < 10; i++) {
 			System.out.println("Por favor, digite um número: ");
-			conjunto.add(s.nextInt());
+			int a = s.nextInt();
+			while(conjunto.contains(a)) {
+				System.out.println("O número já existe no conjunto. Por favor, escolha outro: ");
+				a = s.nextInt();
+			}
+			conjunto.add(a);
 		}
 		
 		Iterator<Integer> it = conjunto.iterator();
