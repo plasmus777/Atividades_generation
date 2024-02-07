@@ -25,6 +25,11 @@ h2{
     text-align: center;
 }
 
+#menu{
+    background-color: rgb(216, 216, 122);
+    border-style: outset;
+}
+
 #menu li{
     display: inline;
     margin: 10px;
@@ -61,4 +66,5 @@ h2{
 .botao:hover{
     background-color: #fdfd31;
     color:gray;
+    cursor: pointer;
 }
