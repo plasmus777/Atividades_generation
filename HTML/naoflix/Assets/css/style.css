@@ -1,0 +1,51 @@
+body{
+    background: url("https://i.imgur.com/07XQ5od.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 100%;
+}
+
+#titulo{
+    color: white;
+    margin-top: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200;
+}
+
+.subTitulo{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img1{
+    margin-left: 80px;
+}
+
+.select{
+    margin-right: 150px;
+}
+
+button:hover{
+    background-color:brown;
+    cursor: pointer;
+}
+
+.transparente{
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.trailer{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}

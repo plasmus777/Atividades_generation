@@ -1,0 +1,64 @@
+/*Estilos gerais*/
+p{
+    font-size: 20px;
+    color: black;
+}
+h1{
+    font-size: 30px;
+    color: black;
+}
+h2{
+    font-size: 25px;
+    color: black;
+}
+.centro{
+    text-align: center;
+}
+
+
+/*Estilos da página index.html*/
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#menu li{
+    display: inline;
+    margin: 10px;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    color: gray;
+}
+
+.p-30{
+    padding: 30px;
+}
+
+.br-10{
+    border-radius: 10%;
+}
+
+/*Estilos da página sobre.html*/
+.amarelo{
+    background-color:rgb(241, 241, 117);
+}
+
+.botao{
+    background-color: rgb(241, 241, 117);
+    font-size: 18px;
+}
+
+.botao:hover{
+    background-color: #fdfd31;
+    color:gray;
+}
