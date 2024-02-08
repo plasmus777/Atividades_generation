@@ -43,6 +43,19 @@ h3{
     margin-top: 2%;
 }
 
+h5{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
 /*Index.html*/
 .menuitem{
     display: flex;
