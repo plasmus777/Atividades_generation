@@ -1,6 +1,11 @@
+body{
+    background-image: '../../assets/img/home.jpg';
+}
+
 .titulo{
     color: blue;
     text-align: center;
+    justify-content: center;
 }
 
 .img{
@@ -8,8 +13,36 @@
     height: 500px;
     display: block;
     margin: 0 auto;
+    justify-content: center;
+}
+
+.centro{
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+    justify-content: center;
 }
 
 h6{
     text-align: center;
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+    justify-content: center;
 }
