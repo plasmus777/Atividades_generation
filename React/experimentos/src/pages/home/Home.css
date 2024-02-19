@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url('../../assets/img/home.jpg');
+    width: 100%;
+    height: 100%;
+}
+.titulo{
+    color: blue;
+    text-align: center;
+    justify-content: center;
+}
+
+.img{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.centro{
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+    justify-content: center;
+}
+
+h6{
+    text-align: center;
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+    justify-content: center;
+}
