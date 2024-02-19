@@ -1,21 +1,27 @@
-import React, {useState} from 'react'
-import Home from './pages/home/Home'
+import './App.css';
 
-function App(){
-  const [valor, setValor] = useState(0);
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-  function handleClick(){
-    setValor(valor + 1);
-  }
+import Home from './pages/home/Home';
+import Navbar from './components/navbar/NavBar';
+import Footer from './components/footer/Footer';
+import Login from './pages/login/Login';
 
+function App() {
   return (
     <>
-      <Home title='Blog Pessoal' description='Website do blog pessoal, desenvolvido com React.'/>
-    
-      <p>Você apertou no botão {valor} vezes.</p>
-      <button onClick={handleClick} className='centro'>Botão</button>
+    <BrowserRouter>
+        <Navbar />
+          <div className='min-h-[80vh]'>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/home" element={<Home />} />
+            </Routes>
+          </div>
+          <Footer />
+        </BrowserRouter>
     </>
-  )
+);
 }
-
-export default App
+export default App;
