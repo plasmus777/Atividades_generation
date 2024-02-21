@@ -1,6 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import './Home.css'
 import homeLogo from '../../assets/img/home.jpg'
+import { UserContext } from '../../contexts/UserContext';
+import { Link } from 'react-router-dom';
 
 interface interfaceProps{
   title: string;
@@ -11,6 +13,7 @@ function Home(props:interfaceProps){
   const [loggedIn, setLoggedIn] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [tarefa, setTarefa] = useState('');
+  const { nome, setNome } = useContext(UserContext);
 
   useEffect(() => {
     if(completed){
@@ -20,6 +23,17 @@ function Home(props:interfaceProps){
 
   return (
     <>
+      <div className='flex justify-center items-center'>
+        <h2 className="text-white-900 text-5xl  my-4">Logar</h2>
+        <h2 className="text-white-900 text-4xl ">Olá usuário : {nome}</h2>
+        <Link to="/login" className="my-4 rounded bg-white-400
+        hover:bg-white-900 text-white w-1/2 py-2 flex justify-center">
+          Voltar 
+        </Link>
+      </div>
+
+      <div className='mt-10'></div>
+
       {loggedIn ? (
         <h3>Bem-vindo ao blog!</h3>
       ) : (
