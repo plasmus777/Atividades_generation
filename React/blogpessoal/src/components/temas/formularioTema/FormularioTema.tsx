@@ -121,6 +121,8 @@ function FormularioTema() {
                     {id === undefined ? 'Cadastrar' : 'Editar'}
                 </button>
             </form>
+
+            <button className="rounded text-white-100 bg-yellow-400 hover:bg-yellow-800 w-1/4 py-2 mx-auto block mt-4" onClick={retornar}>Voltar</button>
         </div>
     );
 }

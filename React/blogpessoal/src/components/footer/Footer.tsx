@@ -3,8 +3,8 @@ import { Envelope, GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 function Footer() {
     return (
       <>
-          <div className="bg-lime-900 flex justify-center text-white">
-            <div className="container flex flex-col items-center py-4">
+          <div className="bg-gradient-to-r from-green-900 to-lime-800 flex justify-center text-white">
+            <div className="container flex flex-col items-center py-2">
               <p className='text-xl font-bold'>Blog Pessoal</p>
               <p className='text-lg'>Fernando Lopes</p>
               <div className='flex gap-6 m-5'>

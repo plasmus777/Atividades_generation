@@ -10,6 +10,7 @@ import Cadastro from './pages/cadastro/Cadastro';
 import ListaTemas from './components/temas/listaTemas/ListaTemas';
 import FormularioTema from './components/temas/formularioTema/FormularioTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
+import UserProfile from './pages/perfil/UserProfile';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
     <AuthProvider>
       <BrowserRouter>
         <Navbar />
-          <div className='min-h-[80vh] width-100 bg-lime-700'>
+          <div className='min-h-[80vh] width-100 bg-gradient-to-r from-green-500 to-lime-600'>
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/login" element={<Login />} />
@@ -27,6 +28,7 @@ function App() {
               <Route path="/cadastroTema" element={<FormularioTema />} />
               <Route path="/editarTema/:id" element={<FormularioTema />} />
               <Route path="/deletarTema/:id" element={<DeletarTema />} />
+              <Route path="/perfil" element={<UserProfile />} />
             </Routes>
           </div>
           <Footer />
