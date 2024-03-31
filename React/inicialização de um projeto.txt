@@ -1,0 +1,22 @@
+npm create vite@latest
+
+npm install react-router-dom tailwindcss postcss autoprefixer @phosphor-icons/react axios react-loader-spinner react-toastify reactjs-popup
+
+npx tailwindcss init -p
+
+adicionar nos arquivos css:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+alterar o arquivo de configurações tailwind.config.js:
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [ "./index.html",
+  "./src/**/*.{js,ts,jsx,tsx}",
+  "*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
